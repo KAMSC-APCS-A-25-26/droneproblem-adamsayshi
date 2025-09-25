@@ -45,8 +45,8 @@ public class DroneDebug {
         System.out.println("Surveillance Photos: " + surveillancePhotos);
 
         int dataSlots = surveillancePhotos % 6;
-        System.out.println("Data storage slots used: " + dataSlots + " out of 6");
 
+        System.out.println("Data storage slots used: " + dataSlots + " out of 6");
         System.out.println("Mission Duration: " + missionTime + " minutes");
     }
     }

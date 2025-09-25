@@ -1,3 +1,5 @@
+import javax.sound.midi.SysexMessage;
+
 // DO NOT CHANGE THE CLASS NAME, IT WILL BREAK THE AUTO GRADER
 public class DroneAssignment {
     public static void main(String[] args) {
@@ -29,9 +31,13 @@ public class DroneAssignment {
         // Display "Photos: " + photos
         // Display "Storage slots used: " + photos + " out of 4"
         altitude += 20;
+        System.out.println("After climbing 20m: " + altitude);
         battery /= 85;
+        System.out.println("After battery drain: " + battery);
         photos += 3;
+        System.out.println("After taking 3 photos: " + photos);
         altitude/=2;
+        System.out.println("After descending to half: " + altitude);
         photos  %= 4;
         System.out.println("Photos: " + photos);
         System.out.println("Storage slots used: " + photos + " out of 4");
