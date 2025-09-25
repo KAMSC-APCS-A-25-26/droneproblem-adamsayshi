@@ -32,12 +32,12 @@ public class DroneAssignment {
         // Display "Storage slots used: " + photos + " out of 4"
         altitude += 20;
         System.out.println("After climbing 20m: " + altitude);
-        battery /= 85;
+        battery -= 15;
         System.out.println("After battery drain: " + battery);
         photos += 3;
         System.out.println("After taking 3 photos: " + photos);
         altitude/=2;
-        System.out.println("After descending to half: " + altitude);
+        System.out.println("After descending to half: " + (int)altitude);
         photos  %= 4;
         System.out.println("Photos: " + photos);
         System.out.println("Storage slots used: " + photos + " out of 4");
